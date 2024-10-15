@@ -7,14 +7,16 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 
 class JaspalToast {
-    fun showToast(context: Context, message : String ){
-        val toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
-        toast.setGravity(Gravity.CENTER, 0, 0)
-        toast.show()
-    }
+    companion object{
+        fun makeToast(context: Context, message : String ){
+            val toast = Toast.makeText(context, message, Toast.LENGTH_LONG)
+            toast.setGravity(Gravity.CENTER, 0, 0)
+            toast.show()
+        }
 
-    fun initMyViewActivity(context: Context){
-        var intent = Intent(context,MyViewActivity::class.java)
-        startActivity(context,intent,null)
+        fun uiTest(context: Context){
+            var intent = Intent(context,MyViewActivity::class.java)
+            startActivity(context,intent,null)
+        }
     }
 }

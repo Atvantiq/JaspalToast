@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-   <TextView
-       android:textStyle="bold"
-       android:textSize="40dp"
-       android:gravity="center"
-       android:text="Main Class"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"></TextView>
+   <Button
+       android:id="@+id/checkToast"
+       android:text="Check Toast"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+   <Button
+       android:id="@+id/checkLog"
+       android:text="Check Log"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:id="@+id/checkMessageDialog"
+       android:text="Check Message Dialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:id="@+id/checkAlertDialog"
+       android:text="Check Alert Dialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <Button
+       android:id="@+id/checkUI"
+       android:text="Check UI View"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</layout>
