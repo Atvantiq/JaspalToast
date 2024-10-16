@@ -1,16 +1,23 @@
-Step 1. Add it in your root build.gradle at the end of repositories:
 
+# Project Title
+
+A brief description of what this project does and who it's for
+
+~~~ 
 dependencyResolutionManagement {
-	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-	repositories {
-		mavenCentral()
-		maven { url 'https://jitpack.io' }
-	}
+    
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    
+    repositories {
+    
+        mavenCentral()
+    
+        maven { url 'https://jitpack.io' }
+    }
 }
 
 
-Step 2. Add the dependency
-
- dependencies {
-	implementation 'com.github.Atvantiq:JaspalToast:v1.1.0'
+dependencies {
+    implementation 'com.github.Atvantiq:JaspalToast:v1.1.0'
 }
+~~~
